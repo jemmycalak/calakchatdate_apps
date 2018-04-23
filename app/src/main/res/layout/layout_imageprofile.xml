@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/imageReal"
+        android:layout_width="300dp"
+        android:layout_height="360dp"
+        android:src="@drawable/jemmy"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/titleReal"
+        android:text="~Jemmy Calak~"
+        android:textSize="@dimen/textLarger"
+        android:textColor="@color/white"
+        android:layout_marginTop="-50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageReal"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

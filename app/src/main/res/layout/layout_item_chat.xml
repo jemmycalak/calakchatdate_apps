@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:padding="@dimen/marginSmaller">
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageChat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/jemmy" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="-15dp"
+                android:layout_marginTop="6.5dp"
+                android:src="@drawable/arrow_bg1"
+                android:rotation="90"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="3"
+                android:background="@drawable/bg_received_msg">
+
+                <TextView
+                    android:id="@+id/msgChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imageChat"
+                    android:layout_weight="2.8"
+                    android:text="Hi.. How are you today ?"
+                    android:padding="@dimen/paddingSmall"
+                    android:layout_marginTop="6.5dp"/>
+
+                <TextView
+                    android:id="@+id/timeReadChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="22:00"
+                    android:layout_gravity="bottom"/>
+
+                <ImageView
+                    android:id="@+id/imageIsReadeChat"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_ispending"
+                    android:layout_gravity="bottom"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/marginSmaller">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"/>
+
+        <RelativeLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-18dp"
+                android:src="@drawable/arrow_bg2"
+                android:rotation="136"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-10dp"
+                android:layout_marginRight="@dimen/marginSmallest"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.9"
+                android:weightSum="3"
+                android:background="@drawable/bg_received_msg_1"
+                android:layout_toLeftOf="@+id/imageView4">
+
+                <TextView
+                    android:id="@+id/msgChatSender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imageChat"
+                    android:layout_weight="2.8"
+                    android:text="Hi.. I am fine, what about you ?"
+                    android:padding="@dimen/paddingSmall"
+                    />
+
+                <TextView
+                    android:id="@+id/timeReadChatSender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="22:00"
+                    android:layout_gravity="bottom"/>
+
+                <ImageView
+                    android:id="@+id/imageIsReadeChatSender"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_ispending"
+                    android:layout_gravity="bottom"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
